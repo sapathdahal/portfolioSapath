@@ -1,18 +1,47 @@
 // import { useNavigate } from "react-router-dom"
 
 // import { Link } from "react-router-dom"
-import { useState } from 'react'
-import logo from '../assets/works/logomineee copy.png'
+import { useEffect, useRef, useState } from 'react'
+import logo from '../assets/personal/logomineee copy.png'
 
 export const NavBar = () => {
 
   const [sidebarPosition, setSidebarPosition] = useState<boolean>(false)
- console.log(sidebarPosition)
-      // const navigate = useNavigate();
+
+  const [scrollDown, setScrollDown] = useState<boolean>(false)
+
+    const lastScroll = useRef(0)
+
+    const handleScroll = () =>{
+      const currentScroll = window.scrollY;
+
+      if(currentScroll > lastScroll.current){ //right now lastScroll is 0 as we havent given it the value of scrollY yet 
+                                              //and so this if condition applies and runs
+        setScrollDown(true)
+        console.log('down' + currentScroll,lastScroll.current)
+        
+      }
+      else{
+
+         setScrollDown(false)
+         console.log('up' + currentScroll,lastScroll.current)
+      }
+      lastScroll.current=currentScroll;
+    }
+     
+    useEffect(()=>{
+    window.addEventListener("scroll",handleScroll) 
+  
+    return ()=>{  
+    window.removeEventListener("scroll",handleScroll) 
+    }
+    },[])
+
   return (
-    <div className="fixed w-full  z-10 backdrop-blur-xl border-b border-b-gray-300 font-poppins">
+    <div className={` fixed w-full transition-transform ease-linear duration-200 z-10 bg-[#f8f8f8] border-b border-b-gray-300 font-poppins
+     ${scrollDown ? '-translate-y-[90px]':'translate-y-0'} `}>
       
-      <div className="w-[80%] mx-auto flex justify-between items-center py-2 px-3">
+      <div className={`w-[80%] mx-auto flex justify-between items-center py-2 px-3`}>
         
         <div className="logo order-2">
           <a href="#home"><img src={logo} className=" cursor-pointer w-16" alt="" /></a> 

@@ -4,10 +4,11 @@ const workImages = [
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494514/sdott_copy_cgkqpg.webp',
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494504/bartika22_nmf5xt.webp',
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494498/acreagebrahma_copy2_iuoa71.jpg',
-  'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494518/taxidriver_copy_ib9wcg.webp',
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494508/JNKJN_ekg8jd.jpg',
-  'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494517/VEDA_copy2_hqirgu.jpg',
+  'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494518/taxidriver_copy_ib9wcg.webp',
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494506/isitreal_copy_hbrkmn.webp',
+  'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494517/VEDA_copy2_hqirgu.jpg',
+
 ]
 
 // interface image {
@@ -43,8 +44,8 @@ export const Works = () => {
 
       <div className="list columns-[300px]">
         {workImages?.map((image,idx)=>
-        <div>
-          <img src={image} key={idx} className="w-full mb-4 shadow-2xl cursor-pointer hover:scale-[1.01] transition-all ease-linear" alt="design-work" loading="lazy"/>
+        <div className='' key={idx}>
+          <img src={image} className="w-full mb-4 shadow-2xl cursor-pointer hover:scale-[1.01] transition-all ease-linear" alt="design-work" loading="lazy"/>
         </div>
          )}
          
