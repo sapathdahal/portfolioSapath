@@ -1,3 +1,4 @@
+import LazyLoad from "react-lazyload"
 
 const workImages = [
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494509/OREO_copy_awt7ii.jpg',
@@ -10,6 +11,8 @@ const workImages = [
   'https://res.cloudinary.com/deopzx821/image/upload/q_auto,f_auto/v1729494517/VEDA_copy2_hqirgu.jpg',
 
 ]
+
+// import LazyLoad from "react-lazyload"
 
 // interface image {
 //   src:string,
@@ -43,10 +46,16 @@ export const Works = () => {
       </div>
 
       <div className="list columns-[300px]">
-        {workImages?.map((image,idx)=>
-        <div className='' key={idx}>
+        {workImages?.map((image,idx)=>(
+        <LazyLoad
+          key={idx} 
+          height={200} 
+          offset={100}
+           placeholder={ <div className="spinner">Loading...</div> }>
+         
           <img src={image} className="w-full mb-4 shadow-2xl cursor-pointer hover:scale-[1.01] transition-all ease-linear" alt="design-work" loading="lazy"/>
-        </div>
+        </LazyLoad>)
+        // <img src={image} className="w-full mb-4 shadow-2xl cursor-pointer hover:scale-[1.01] transition-all ease-linear" alt="design-work" loading="lazy"/>
          )}
          
       </div>

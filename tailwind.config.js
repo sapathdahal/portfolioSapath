@@ -14,8 +14,7 @@ export default {
       },
       colors:{
       primary:'#171635',
-      },    
-        
+      },      
     },
   },
   plugins: [],
