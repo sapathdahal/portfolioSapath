@@ -1,7 +1,7 @@
 import {useForm} from 'react-hook-form';
-// import {ErrorMessage} from '@hookform/error-message';
+
 import { db } from '../firebase';
-import {collection,addDoc,getDocs, query } from 'firebase/firestore'
+import {collection,addDoc} from 'firebase/firestore'
 import emailjs from "emailjs-com"
 
 export const Contact = () => {
