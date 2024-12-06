@@ -38,10 +38,9 @@ export const NavBar = () => {
     },[])
 
   return (
-    <div className={` fixed w-full transition-transform ease-linear duration-200 z-10 bg-[#f8f8f8] border-b border-b-gray-300 font-poppins
-     ${scrollDown ? '-translate-y-[90px]':'translate-y-0'} `}>
+    <div className={`w-full relative font-poppins bg-red-300`}>
       
-      <div className={`w-[80%] mx-auto flex justify-between items-center py-2 px-3`}>
+      <div className={`w-full fixed  transition-transform ease-linear duration-200 z-10 bg-[#f8f8f8] border-b border-b-gray-300 flex justify-around items-center py-2 ${scrollDown ? '-translate-y-[90px]':'translate-y-0'} `}>
         
         <div className="logo order-2">
           <a href="#home"><img src={logo} className=" cursor-pointer w-16" alt="" /></a> 

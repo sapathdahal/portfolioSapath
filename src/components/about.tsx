@@ -1,3 +1,5 @@
+import { FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaLetterboxd } from "react-icons/fa6"
 
 
 export const About = () => {
@@ -50,7 +52,13 @@ export const About = () => {
         </p>
         <div className="buttons space-x-5">
           <button className="bg-[#252525] text-white p-2 rounded-sm border-none hover:scale-[1.1] hover:bg-[#bca455] hover:text-white transition-all">My Resume</button>
-          <button className="bg-white text-[#252525] border border-[#252525] p-2 rounded-sm  hover:scale-[1.1] hover:border-none hover:bg-[#bca455] hover:text-white transition-all">Contact Me</button>  
+          <a href="#contact"><button className="bg-white text-[#252525] border border-[#252525] p-2 rounded-sm  hover:scale-[1.1] hover:border-white hover:bg-[#bca455] hover:text-white transition-all">Contact Me</button></a>
+        </div>
+        <div className="flex space-x-4">
+          <a href="https://www.instagram.com/sptdhl/"><FaLetterboxd size={25} color="black"/></a>
+          <a href=""><FaInstagram  size={25} color="black"/></a>
+          <a href="https://letterboxd.com/sapath/"><FaLinkedin   size={25} color="black"/></a>
+          
         </div>
         </div>
 
