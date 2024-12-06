@@ -13,7 +13,7 @@ export const Home = () => {
           I Design and Deliver.
         </h1>
         <h1 className='font-bold text-3xl md:text-4xl'>Graphics Designer
-          & Aspiring Analyst
+          & Aspiring Acturary
         </h1>
         <p className='text-sm text-gray-600'>
           I am a mathematical science student majoring actuarial sciences.

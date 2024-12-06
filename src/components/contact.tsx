@@ -107,9 +107,15 @@ export const Contact = () => {
         </div>
            <div>
             <div className="socials text-white flex justify-evenly pt-8 items-center">
-             <a href="https://www.instagram.com/sptdhl/"> <span className='cursor-pointer'><FaInstagram color='white' size={22} className='mx-auto'/>Instagram  </span></a> 
-             <a href=""> <span className='cursor-pointer'><FaLinkedin color='white' size={22} className='mx-auto'/>Linked In   </span></a>
-             <a href="https://letterboxd.com/sapath/"> <span className='cursor-pointer'><FaLetterboxd color='white' size={22} className='mx-auto'/>Letterboxd</span></a>
+             <a href="https://www.instagram.com/sptdhl/"> <span className='cursor-pointer text-sm'>
+              <FaInstagram color='white' size={22} className='mx-auto'/>
+              Instagram</span></a> 
+             <a href="https://letterboxd.com/sapath/"><span className='cursor-pointer text-sm'>
+              <FaLetterboxd color='white' size={22} className='mx-auto'/>
+              Letterboxd</span></a>
+             <a href="https://www.linkedin.com/in/sapath-dahal-2a6278288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span className='cursor-pointer text-sm'>
+              <FaLinkedin color='white' size={22} className='mx-auto'/>
+              Linked In   </span></a>
 
             </div>
            </div>

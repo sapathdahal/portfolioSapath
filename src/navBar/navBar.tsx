@@ -61,7 +61,7 @@ export const NavBar = () => {
         </ul>
 
         <div className="socials">
-        <button className="bg-primary text-white rounded-sm py-1 px-2">Socials</button>
+        <a href="#contact"><button className="bg-primary text-white rounded-sm py-1 px-2">Socials</button></a>  
         </div>
         </div>
 

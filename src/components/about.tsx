@@ -46,18 +46,18 @@ export const About = () => {
           I'm always eager to learn, grow and expand my horizons in both the fields.
         </p>
         <p className="text-sm">
-        As an Actuarial student, I enjoy applying analytical thinking and problem-solving skills to complex mathematical challenges, while my passion for graphic design allows me to tap into my creative side.
-         The combination of these two disciplines helps me maintain a balanced and multifaceted approach to both my studies and creative projects. I believe this unique blend of analytical rigor and artistic 
-         expression enables me to think outside the box, whether I am solving a mathematical problem or designing a visual concept. I'm always striving to learn more, seeking inspiration from various fields to enhance my abilities.
-        </p>
+        As an actuarial student, I am driven into finance and use my graphic design skills to express my creativity. 
+        This blend helps me maintain a balanced approach to both my academic and creative endeavors. I'm always eager to learn new things
+        and draw inspiration from various fields to enhance my skills.</p>
+
         <div className="buttons space-x-5">
           <button className="bg-[#252525] text-white p-2 rounded-sm border-none hover:scale-[1.1] hover:bg-[#bca455] hover:text-white transition-all">My Resume</button>
           <a href="#contact"><button className="bg-white text-[#252525] border border-[#252525] p-2 rounded-sm  hover:scale-[1.1] hover:border-white hover:bg-[#bca455] hover:text-white transition-all">Contact Me</button></a>
         </div>
         <div className="flex space-x-4">
-          <a href="https://www.instagram.com/sptdhl/"><FaLetterboxd size={25} color="black"/></a>
-          <a href=""><FaInstagram  size={25} color="black"/></a>
-          <a href="https://letterboxd.com/sapath/"><FaLinkedin   size={25} color="black"/></a>
+          <a href="https://www.instagram.com/sptdhl/"><FaInstagram size={25} color="black"/></a>
+          <a href="https://letterboxd.com/sapath/"><FaLetterboxd  size={25} color="black"/></a>
+          <a href="https://www.linkedin.com/in/sapath-dahal-2a6278288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><FaLinkedin  size={25} color="black"/></a>
           
         </div>
         </div>
